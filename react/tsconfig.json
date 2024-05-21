@@ -1,0 +1,23 @@
+{
+  "extends": "@vtex/tsconfig",
+  "compilerOptions": {
+    "noEmitOnError": false,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "types": [
+      "node",
+      "jest"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2017"
+  },
+  "include": [
+    "./typings/*.d.ts",
+    "./**/*.tsx",
+    "./**/*.ts"
+  ]
+}
