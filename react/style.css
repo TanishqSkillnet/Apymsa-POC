@@ -1,0 +1,65 @@
+.topheader_container{
+  display: flex;
+  padding: 0.5rem;
+  width: 100%;
+  font-size:small;
+  background-color: rgb(29, 29, 235);
+  justify-content: space-between;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.logo_setting{
+  margin-top: 1rem;
+}
+
+.interalContainer{
+  display: flex;
+}
+
+.names_different{
+  cursor: pointer;
+  font-family: 'sans-serif';
+  font-weight: 400;
+  color: white;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.names{
+  font-family: 'sans-serif';
+  font-weight: 400;
+  color: white;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.ayoda_content{
+  display: grid;
+  color: black;
+  background-color: white;
+  border: 1px solid rgb(21, 21, 255);
+  padding: 1rem;
+  position: absolute;
+  z-index: 1000;
+  border-radius: 0.4rem;
+  margin-top: 0.7rem;
+}
+
+.ayoda_contentDataTwo{
+  margin-top: 0.5rem;
+}
+
+.ayoda_contentDataOne{
+  padding-top: 0.5rem;
+}
+
+.ayoda_contentDataThree{
+  padding-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.partition{
+  font-weight: 600;
+  color: white;
+}

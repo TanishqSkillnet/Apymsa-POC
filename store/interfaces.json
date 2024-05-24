@@ -1,5 +1,8 @@
 {
   "apysma_vehicle": {
     "component": "Apymsa"
+  },
+  "top_header":{
+    "component": "TopHeader"
   }
 }
