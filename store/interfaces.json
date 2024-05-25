@@ -4,5 +4,17 @@
   },
   "top_header":{
     "component": "TopHeader"
+  },
+  "custom_search_bar":{
+    "component": "SearchBar"
+  },
+  "custom_location":{
+    "component":"Location"
+  },
+  "custom_address":{
+    "component":"Address"
+  },
+  "burger_menu":{
+    "component":"BurgerMenu"
   }
 }
