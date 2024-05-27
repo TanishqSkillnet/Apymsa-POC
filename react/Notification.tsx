@@ -12,7 +12,7 @@ const Notification: StorefrontFunctionComponent<Notification> = ({notification}:
         <img src={notification} alt="" />
       </div>
       <div className={style.notification_content}>
-        <div className={style.ayoda_content}>
+        <div className={style.notification_content}>
             <div className={style.ayoda_contentDataOne}>Preguntas frecuentes</div>
             <div className={style.ayoda_contentDataTwo}>Como comprar en Autex ?</div>
             <div className={style.ayoda_contentDataThree}> Soporte Autex </div>

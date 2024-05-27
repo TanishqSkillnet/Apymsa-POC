@@ -59,6 +59,19 @@
   margin-left:-0.5rem
 }
 
+.notification_content{
+  display: grid;
+  color: black;
+  background-color: white;
+  border: 1px solid rgb(21, 21, 255);
+  padding: 1rem 1.5rem;
+  position: absolute;
+  z-index: 1000;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+  margin-left:-0.5rem
+}
+
 .Todas_las_Especialidades_contentDataTwo {
   margin-top: 1rem;
 }

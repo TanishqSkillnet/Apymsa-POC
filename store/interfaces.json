@@ -16,5 +16,8 @@
   },
   "burger_menu":{
     "component":"BurgerMenu"
+  },
+  "custom_notification":{
+    "component":"Notification"
   }
 }
