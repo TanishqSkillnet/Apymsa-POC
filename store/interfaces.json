@@ -19,5 +19,8 @@
   },
   "custom_notification":{
     "component":"Notification"
+  },
+  "custom_minicart":{
+    "component":"MiniCart"
   }
 }
