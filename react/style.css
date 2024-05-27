@@ -277,9 +277,6 @@
 }
 
 .burger {
-  position: fixed;
-  top: 3.8rem;
-  left: 24px;
   background: none;
   border: none;
   color: #333;

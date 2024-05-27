@@ -49,7 +49,7 @@ const BurgerMenu: React.FC = () => {
   console.log(name,"this is the name")
 
   return (
-    <div>
+    <div style={{display:"flex",justifyContent:"center"}}>
       <div className={`${style.overlay} ${isOpen ? style.show : ''}`}></div>
       <div className={`${style.menu} ${isOpen ? style.open : ''}`}>
         <div className={style.menu_header}>
