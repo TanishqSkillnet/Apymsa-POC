@@ -46,6 +46,40 @@
   margin-top: 0.7rem;
 }
 
+.Todas_las_Especialidades{
+  display: grid;
+  color: black;
+  background-color: white;
+  border: 1px solid rgb(21, 21, 255);
+  padding: 1rem 1.5rem;
+  position: absolute;
+  z-index: 1000;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+  margin-left:-0.5rem
+}
+
+.Todas_las_Especialidades_contentDataTwo {
+  margin-top: 1rem;
+}
+
+.Todas_las_Especialidades_contentDataOne {
+  padding-top: 1rem;
+}
+
+.Todas_las_Especialidades_contentDataFour{
+  padding-top: 1rem;
+}
+
+.Todas_las_Especialidades_contentDataFive{
+  padding-top: 1rem;
+}
+
+.Todas_las_Especialidades_contentDataThree {
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
 .ayoda_contentDataTwo {
   margin-top: 0.5rem;
 }
@@ -187,8 +221,14 @@
   margin-top: 1rem;
 }
 
-.text_especialidados{
+.image_especialidados{
   margin-top: 0.2rem;
+  cursor: pointer;
+}
+
+.text_especialidados {
+  margin-top: 0.2rem;
+  cursor: pointer;
 }
 
 /* burger menu */
@@ -200,8 +240,9 @@
   height: 100%;
   background-color: white;
   color: black;
-  transition: left 0.3s ease; /* Transition for smooth opening */
-  padding: 1rem; /* Padding for menu content */
+  transition: left 0.3s ease;
+  overflow: auto;
+  z-index: 1001; /* Ensure menu is above the overlay */
 }
 
 .menu.open {
@@ -217,17 +258,92 @@
   color: #333;
   font-size: 24px;
   cursor: pointer;
-  z-index: 1000; /* Ensure button is above menu */
+  z-index: 1002; /* Ensure button is above menu */
 }
 
 .close {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 9px;
+  right: 8px;
   background: none;
   border: none;
-  color:black;
-  font-size: 24px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
-  z-index: 1001; /* Ensure button is above menu content */
+  z-index: 1003; /* Ensure button is above menu content */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Apply blur effect */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  opacity: 0;
+  z-index: 1000; /* Ensure overlay is below the menu */
+  pointer-events: none; /* Prevent interaction with the overlay */
+}
+
+.overlay.show {
+  opacity: 1; /* Make overlay visible when menu is open */
+  pointer-events: all; /* Allow interaction with the overlay */
+}
+
+/* burger Menu bar data */
+
+.menu_header {
+  padding: 0.75rem;
+  background-color: #1226aa;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile_name {
+  padding: 1rem 1.5rem;
+  border-bottom: 1.5px solid #ecedef;
+}
+
+.logo_profile {
+  line-height: 1px;
+  display: flex;
+  background-color: #f8f9fa;
+}
+
+.name_customer {
+  list-style: 1px;
+}
+
+.logo_class {
+  margin-top: 0.4rem;
+  margin-right: 0.5rem;
+}
+
+.menu_logo {
+  margin-left: 0.2rem;
+}
+
+.productos {
+  padding: 1.5rem 1.5rem;
+  border-bottom: 1.5px solid #ecedef;
+}
+
+.ul_list {
+  padding-left: 1rem;
+  margin-top: 10px;
+  line-height: 2rem;
+  list-style-type: none;
+}
+
+.noScroll {
+  overflow: hidden;
 }

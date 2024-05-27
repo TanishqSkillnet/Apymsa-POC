@@ -1,7 +1,9 @@
 {
   "extends": "@vtex/tsconfig",
   "compilerOptions": {
+    "lib":["DOM"],
     "noEmitOnError": false,
+    "jsx": "react",
     "typeRoots": [
       "node_modules/@types"
     ],
