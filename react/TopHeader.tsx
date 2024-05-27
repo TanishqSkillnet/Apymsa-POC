@@ -28,13 +28,19 @@ const TopHeader: StorefrontFunctionComponent<TopHeader> = ({ gratis,
     <div className={style.topheader_container}>
       <div className={style.interalContainer}>
         <div className={style.names}>
+          <span>
           {gratis}
+          </span>
         </div>
         <div className={style.partition}>
+          <span>
           |
+          </span>
         </div>
         <div className={style.names}>
+          <span>
           {compras}
+          </span>
         </div>
       </div>
       <div className={style.interalContainer}>
@@ -43,9 +49,9 @@ const TopHeader: StorefrontFunctionComponent<TopHeader> = ({ gratis,
             <img src="https://skillnet.vteximg.com.br/arquivos/info.png" width={15} alt="" />&nbsp;{ayoda}
           </div>
           {ayodaContent ? <div className={style.ayoda_content}>
-            <div className={style.ayoda_contentDataOne}>Preguntas frecuentes</div>
-            <div className={style.ayoda_contentDataTwo}>Como comprar en Autex ?</div>
-            <div className={style.ayoda_contentDataThree}> Soporte Autex </div>
+            <div className={style.ayoda_contentDataOne}> <span> Preguntas frecuentes</span></div>
+            <div className={style.ayoda_contentDataTwo}><span>Como comprar en Autex ?</span></div>
+            <div className={style.ayoda_contentDataThree}> <span>Soporte Autex </span></div>
           </div> :""}
         </div>
         <div className={style.names}>
@@ -57,7 +63,7 @@ const TopHeader: StorefrontFunctionComponent<TopHeader> = ({ gratis,
         <div className={style.names}>
         <span className={style.logo_setting}>
           <img src="https://skillnet.vteximg.com.br/arquivos/calling.png" width={15} alt="" />
-          </span> &nbsp;{call}
+          </span> &nbsp;<span>{call}</span>
         </div>
       </div>
     </div>

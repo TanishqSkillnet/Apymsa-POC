@@ -96,7 +96,9 @@ const Notification: StorefrontFunctionComponent<Notification> = ({ notification 
                 )}
               </div>
               <div>
+                <span>
                 X
+                </span>
               </div>
             </div>
             <div className={style.all_notifications}>

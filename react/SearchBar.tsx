@@ -14,15 +14,15 @@ const SearchBar: StorefrontFunctionComponent<SearchBar> = ({ }) => {
               <span className={style.especialidados_las}>Todos las Especialidades</span>
             </div>
             {todas ?
-            <div>
-              <div className={style.Todas_las_Especialidades}>
-                <div className={style.Todas_las_Especialidades_contentDataOne}>Automotriz</div>
-                <div className={style.Todas_las_Especialidades_contentDataTwo}>Ferretería</div>
-                <div className={style.Todas_las_Especialidades_contentDataFour}> Herramientas y equipos </div>
-                <div className={style.Todas_las_Especialidades_contentDataFive}> Motocicletas </div>
-                <div className={style.Todas_las_Especialidades_contentDataThree}> Seguridad y prevención</div>
-              </div>
-            </div> : ""}
+              <div>
+                <div className={style.Todas_las_Especialidades}>
+                  <div className={style.Todas_las_Especialidades_contentDataOne}><span> Automotriz  </span></div>
+                  <div className={style.Todas_las_Especialidades_contentDataTwo}><span> Ferretería  </span></div>
+                  <div className={style.Todas_las_Especialidades_contentDataFour}>  <span>Herramientas y equipos   </span></div>
+                  <div className={style.Todas_las_Especialidades_contentDataFive}> <span> Motocicletas   </span></div>
+                  <div className={style.Todas_las_Especialidades_contentDataThree}>  <span> Seguridad y prevención  </span></div>
+                </div>
+              </div> : ""}
           </div>
           <div className={style.image_especialidados} onClick={() => { setTodas(!todas) }}>
             <img src="https://skillnet.vteximg.com.br/arquivos/downArrow.png" width={5} alt="" />
