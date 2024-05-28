@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import style from './style.css';
+import { Link } from 'vtex.render-runtime';
 
 const BurgerMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -74,7 +75,7 @@ const BurgerMenu: React.FC = () => {
         <div className={style.productos}>
           <span style={{ fontSize: 'large' }}>Productos</span>
           <ul className={style.ul_list}>
-            <li> <a href="/" style={{textDecoration:"none", color:"inherit"}}>Catálogo</a> </li>
+            <li> <Link href="/men-s" style={{textDecoration:"none", color:"inherit"}}>Catálogo</Link> </li>
             <li> <a href="/" style={{textDecoration:"none", color:"inherit"}}>Mis listas</a></li>
           </ul>
         </div>
