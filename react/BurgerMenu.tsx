@@ -74,46 +74,46 @@ const BurgerMenu: React.FC = () => {
         <div className={style.productos}>
           <span style={{ fontSize: 'large' }}>Productos</span>
           <ul className={style.ul_list}>
-            <li>Catálogo</li>
-            <li>Mis listas</li>
+            <li> <a href="/" style={{textDecoration:"none", color:"inherit"}}>Catálogo</a> </li>
+            <li> <a href="/" style={{textDecoration:"none", color:"inherit"}}>Mis listas</a></li>
           </ul>
         </div>
         <div className={style.productos}>
           <span style={{ fontSize: 'large' }}>Especialidades</span>
           <ul className={style.ul_list}>
-            <li>Automotriz</li>
-            <li>Ferretería</li>
-            <li>Herramientas y equipos</li>
-            <li>Motocicletas</li>
-            <li>Seguridad y prevención</li>
-            <li style={{ color: '#1226aa' }}>Mostrar más</li>
+            <li> <a href="/" style={{textDecoration:"none", color:"inherit"}}>Automotriz</a></li>
+            <li> <a href="/" style={{textDecoration:"none", color:"inherit"}}>Ferretería</a></li>
+            <li> <a href="/" style={{textDecoration:"none", color:"inherit"}}>Herramientas y equipos</a></li>
+            <li> <a href="/" style={{textDecoration:"none", color:"inherit"}}>Motocicletas</a></li>
+            <li> <a href="/" style={{textDecoration:"none", color:"inherit"}}>Seguridad y prevención</a></li>
+            <li style={{ color: '#1226aa' }}> <a href="/" style={{textDecoration:"none", color:"inherit"}}>Mostrar más</a> </li>
           </ul>
         </div>
         <div className={style.productos}>
           <span style={{ fontSize: 'large' }}>Mis Pedidos</span>
           <ul className={style.ul_list}>
-            <li>Historial de pedidos</li>
+            <li> <a href="/" style={{textDecoration:"none", color:"inherit"}}>Historial de pedidos</a></li>
           </ul>
         </div>
         <div className={style.productos}>
           <span style={{ fontSize: 'large' }}>Empresa</span>
           <ul className={style.ul_list}>
-            <li>¿Quiénes somos?</li>
-            <li>Sucursales</li>
+            <li> <a href="/" style={{textDecoration:"none", color:"inherit"}}>¿Quiénes somos?</a></li>
+            <li> <a href="/" style={{textDecoration:"none", color:"inherit"}}>Sucursales</a></li>
           </ul>
         </div>
         <div className={style.productos}>
           <span style={{ fontSize: 'large' }}>Ayuda</span>
           <ul className={style.ul_list}>
-            <li>Preguntas frecuentes</li>
-            <li>Facturación</li>
-            <li>Garantías y devoluciones</li>
-            <li>¿Cómo comprar en Autex?</li>
+            <li> <a href="/" style={{textDecoration:"none", color:"inherit"}}>Preguntas frecuentes</a></li>
+            <li> <a href="/" style={{textDecoration:"none", color:"inherit"}}>Facturación</a></li>
+            <li> <a href="/" style={{textDecoration:"none", color:"inherit"}}>Garantías y devoluciones</a></li>
+            <li> <a href="/" style={{textDecoration:"none", color:"inherit"}}>¿Cómo comprar en Autex?</a></li>
           </ul>
         </div>
         <div className={style.productos}>
           <ul className={style.ul_list}>
-            <li style={{ color: '#1226aa' }}>Cerrar sesión</li>
+            <li style={{ color: '#1226aa' }}> <a href="/" style={{textDecoration:"none", color:"inherit"}}>Cerrar sesión</a> </li>
           </ul>
         </div>
       </div>

@@ -46,7 +46,7 @@ const TopHeader: StorefrontFunctionComponent<TopHeader> = ({ gratis,
       <div className={style.interalContainer}>
         <div className={style.names_different} onClick={()=>setAyodaContent(!ayodaContent)}>
           <div>
-            <img src="https://skillnet.vteximg.com.br/arquivos/info.png" width={15} alt="" />&nbsp;{ayoda}
+            <img src="https://skillnet.vtexassets.com/assets/vtex.file-manager-graphql/images/0b559c50-1515-46ef-b312-858fd2561e5c___308da13329bcf834deb5f691bf51ba2f.png" width={15} alt="" />&nbsp;{ayoda}
           </div>
           {ayodaContent ? <div className={style.ayoda_content}>
             <div className={style.ayoda_contentDataOne}> <span> Preguntas frecuentes</span></div>
@@ -56,13 +56,13 @@ const TopHeader: StorefrontFunctionComponent<TopHeader> = ({ gratis,
         </div>
         <div className={style.names}>
         <span className={style.logo_setting}>
-          <img src="https://skillnet.vteximg.com.br/arquivos/whatsapp.png" width={15} alt="" />
+          <img src="https://skillnet.vtexassets.com/assets/vtex.file-manager-graphql/images/b36c4908-10b0-4316-89d8-6dfa47c81db2___9820d54304e74015c82fc22abf3f88ff.png" width={15} alt="" />
           </span>
            &nbsp;{whatsapp}
         </div>
         <div className={style.names}>
         <span className={style.logo_setting}>
-          <img src="https://skillnet.vteximg.com.br/arquivos/calling.png" width={15} alt="" />
+          <img src="https://skillnet.vtexassets.com/assets/vtex.file-manager-graphql/images/be3e84f3-ef33-47f1-9353-167b42a276c4___36b16b58624ef704c62a672ba518e773.png" width={15} alt="" />
           </span> &nbsp;<span>{call}</span>
         </div>
       </div>
