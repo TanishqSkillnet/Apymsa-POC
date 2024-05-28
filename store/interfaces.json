@@ -6,7 +6,7 @@
     "component": "TopHeader"
   },
   "custom_search_bar":{
-    "component": "SearchBar"
+    "component": "vtexSearchBar"
   },
   "custom_location":{
     "component":"Location"
