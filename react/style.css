@@ -144,6 +144,15 @@
   background-color: #f8f9fa;
 }
 
+.buscado_para_locate{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.2rem;
+  padding: 0.5rem 0.6rem;
+  display: flex;
+  background-color: #f8f9fa;
+}
+
 .buscadopara_content {
   display: flex;
   flex-direction: column;

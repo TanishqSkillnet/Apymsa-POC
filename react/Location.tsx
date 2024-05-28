@@ -18,7 +18,7 @@ const Location: StorefrontFunctionComponent<Location> = ({
 }) => {
   return (
     <div className={style.searchBar_container}>
-      <div className={style.buscado_para}>
+      <div className={style.buscado_para_locate}>
         <div className={style.buscadopara_image}>
           <img src={imageUrl} width={15} alt="" />
         </div>
