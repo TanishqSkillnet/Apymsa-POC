@@ -73,7 +73,7 @@ const Apymsa: StorefrontFunctionComponent<CountdownProps> = ({}) => {
         label:`${item}`
       }
     }));
-    console.log(engines)
+    
     setEngines(engines)
   };
 
