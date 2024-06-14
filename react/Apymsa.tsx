@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { Dropdown } from "vtex.styleguide";
 import { Button } from "vtex.styleguide";
-import Icon from "vtex.styleguide";
-import { IconSearch } from "vtex.store-icons";
 
-import { makes } from "./utils/make";
-import { models } from "./utils/model";
+import { IconSearch } from "vtex.store-icons";
+import { useRuntime } from 'vtex.render-runtime'
+
+
 import { vehicleData } from "./utils/schema";
+import { toLower } from "ramda";
 
 interface CountdownProps {}
 
 const Apymsa: StorefrontFunctionComponent<CountdownProps> = ({}) => {
 
+  const { navigate } = useRuntime()
   const [availableYears, setAvailableYears] = useState<any>(
     vehicleData.map((item) => {
       return {
@@ -73,7 +75,7 @@ const Apymsa: StorefrontFunctionComponent<CountdownProps> = ({}) => {
         label:`${item}`
       }
     }));
-    
+
     setEngines(engines)
   };
 
@@ -82,8 +84,12 @@ const Apymsa: StorefrontFunctionComponent<CountdownProps> = ({}) => {
   }
 
   const handleSearch = () => {
-    
+     navigate({
+      to: `${selectedYear}/${toLower(selectedMake!)}/${toLower(selectedModel!)}?initialMap=c&map=ano,armadora,modelo`
+    })
   };
+
+
 
   return (
     <div className="flex flex-column   ma5 items-center justify-center ">
@@ -117,16 +123,16 @@ const Apymsa: StorefrontFunctionComponent<CountdownProps> = ({}) => {
           />
         </div>
         <div className="w-90 ph3">
-          <Dropdown 
+          <Dropdown
             placeholder="Engine (Optional)"
-            size="large" 
+            size="large"
             options={availableEngines}
             onChange={(event:any)=>handleEngineChange(event)}
             value={selectedEngine}
              />
         </div>
         <div className="mr2 br-100 ph3 near-white ">
-          <Button icon={true} variation="primary" className="br-100 ">
+          <Button icon={true} variation="primary" className="YMM_Search br-100" onClick={handleSearch}>
             <IconSearch />
           </Button>
         </div>
