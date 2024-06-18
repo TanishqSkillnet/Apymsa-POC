@@ -97,7 +97,7 @@ const Apymsa: StorefrontFunctionComponent<CountdownProps> = ({}) => {
       <div className="flex bg-muted-5 pa7 br4 w-100 items-center justify-between mw9 ">
         <div className="w-90 ph3">
           <Dropdown
-            placeholder="Year"
+            placeholder="Año"
             size="large"
             options={availableYears}
             onChange={(event: any) => handleYearChange(event)}
@@ -106,7 +106,7 @@ const Apymsa: StorefrontFunctionComponent<CountdownProps> = ({}) => {
         </div>
         <div className="w-90 ph3">
           <Dropdown
-            placeholder="Make"
+            placeholder="Marca"
             size="large"
             options={availableMakes}
             onChange={(event: any) => handleMakeChange(event)}
@@ -115,7 +115,7 @@ const Apymsa: StorefrontFunctionComponent<CountdownProps> = ({}) => {
         </div>
         <div className="w-90 ph3">
           <Dropdown
-            placeholder="Model"
+            placeholder="Modelo"
             size="large"
             options={availableModels}
             onChange={(event: any) => handleModelChange(event)}
@@ -124,7 +124,7 @@ const Apymsa: StorefrontFunctionComponent<CountdownProps> = ({}) => {
         </div>
         <div className="w-90 ph3">
           <Dropdown
-            placeholder="Engine (Optional)"
+            placeholder="Motor"
             size="large"
             options={availableEngines}
             onChange={(event:any)=>handleEngineChange(event)}
