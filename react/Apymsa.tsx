@@ -26,20 +26,22 @@ const Apymsa: StorefrontFunctionComponent<CountdownProps> = ({}) => {
   const [selectedYear, setYear] = useState();
 
   const [availableMakes, setMakes] = useState<any>();
-  const [selectedMake, setMake] = useState();
+  const [selectedMake, setMake] = useState<any>();
 
   const [availableModels, setModels] = useState<any>();
-  const [selectedModel, setModel] = useState();
+  const [selectedModel, setModel] = useState<any>();
 
   const [availableEngines,setEngines]= useState<any>();
-  const [selectedEngine,setEngine] = useState();
+  const [selectedEngine,setEngine] = useState<any>();
 
 
 
 
   const handleYearChange = (v: any) => {
     setYear(v.target.value);
-
+    setMake(null)
+    setModel(null)
+    setEngine(null)
     const makes = vehicleData
       .filter((item) => item.year == v.target.value)[0]
       .makes.map((item) => {
@@ -53,6 +55,8 @@ const Apymsa: StorefrontFunctionComponent<CountdownProps> = ({}) => {
 
   const handleMakeChange = (v: any) => {
     setMake(v.target.value);
+    setModel(null)
+    setEngine(null)
     const models = vehicleData
       .filter((item) => item.year == Number(selectedYear))[0]
       .makes.filter((item) => item.make === v.target.value)[0].models.map((item=>{
@@ -67,6 +71,7 @@ const Apymsa: StorefrontFunctionComponent<CountdownProps> = ({}) => {
 
   const handleModelChange = (v: any) => {
     setModel(v.target.value);
+    setEngine(null)
     const engines = vehicleData
     .filter((item) => item.year == Number(selectedYear))[0]
     .makes.filter((item) => item.make === selectedMake)[0].models.filter(item=>item.name === v.target.value)[0].engines.map((item=>{
