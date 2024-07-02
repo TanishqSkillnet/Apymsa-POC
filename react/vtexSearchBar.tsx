@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import style from './style.css'
-import { SearchBar } from 'vtex.store-components'
+import { SearchBar } from 'b2blatam.store-components'
 import { Block } from 'vtex.render-runtime'
 
 interface vtexSearchBar { }

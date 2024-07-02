@@ -17,6 +17,10 @@
   display: flex;
 }
 
+.searchBarInnerContainer{
+  margin-top: -0.735rem !important;
+}
+
 .names_different {
   cursor: pointer;
   font-weight: 400;

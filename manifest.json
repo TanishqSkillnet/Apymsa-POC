@@ -1,7 +1,7 @@
 {
   "vendor": "b2blatam",
   "name": "apysma-vehicle",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "title": "Apysma Vehicle Search Utiltiy",
   "description": "Utility for searching products for a particular vehicle with it's Year, make and model",
   "defaultLocale": "pt-BR",
@@ -14,7 +14,7 @@
     "vtex.styleguide": "9.x",
     "vtex.css-handles": "0.x",
     "vtex.store-icons": "0.x",
-    "vtex.store-components": "3.x"
+    "b2blatam.store-components": "3.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
